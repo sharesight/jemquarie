@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.0
+
+ * use Macquarie API v1.0 for the "Service Date" endpoint [#5])(https://github.com/sharesight/jemquarie/pull/5)
+
 ## 1.3.2
 
  * add support for Ruby `2.5.3` [#4])(https://github.com/sharesight/jemquarie/pull/4)
