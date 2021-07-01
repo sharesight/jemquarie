@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   module Parser
     module AccountDetails
@@ -37,7 +39,7 @@ module Jemquarie
           :dealer_code => detail["DealerCode"],
           :adviser_code => detail["AdviserCode"],
           :account_status => detail["AccountStatus"],
-          :date_modified => Time.parse(detail["DateModified"] + " UTC"),
+          :date_modified => Time.parse("#{detail['DateModified']} UTC"),
           :bsb => detail["Bsb"],
           :primary_broker_name => detail["PrimaryBrokerName"],
           :primary_adviser_name => detail["PrimaryAdviserName"]

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   class AccountDetails < Base
     include Parser::AccountDetails

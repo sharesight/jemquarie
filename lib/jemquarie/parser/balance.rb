@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   module Parser
     module Balance
@@ -28,7 +30,7 @@ module Jemquarie
           :account_number => balance["AccountNumber"],
           :ledger_balance => balance["LedgerBalance"],
           :available_balance => balance["AvailableBalance"],
-          :as_at_date => Time.parse(balance["AsAtDate"] + " UTC")
+          :as_at_date => Time.parse("#{balance['AsAtDate']} UTC")
         }
       end
     end

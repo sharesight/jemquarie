@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   class Balance < Base
     include Parser::Balance

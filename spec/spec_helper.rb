@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'jemquarie'
 require 'webmock/rspec'
 

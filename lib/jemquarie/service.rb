@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   class Service < Base
     include Parser::Service

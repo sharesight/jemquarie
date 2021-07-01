@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'savon'
 require 'active_support/core_ext/hash'
 require 'jemquarie/parser/generic'

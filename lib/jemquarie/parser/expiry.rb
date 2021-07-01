@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   module Parser
     module Expiry
@@ -6,7 +8,7 @@ module Jemquarie
         return result if result[:error]
 
         result["XMLExtract"]["ExpiryDate"]
-        Time.parse(result["XMLExtract"]["ExpiryDate"] + " UTC")
+        Time.parse("#{result['XMLExtract']['ExpiryDate']} UTC")
       end
     end
   end

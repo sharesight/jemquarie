@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jemquarie
   module Parser
     module CashTransactions
@@ -27,13 +29,13 @@ module Jemquarie
         {
           :foreign_identifier => transaction["TransactionId"],
           :account_number => transaction["AccountNumber"],
-          :date_time => Time.parse(transaction["TransactionDate"] + " UTC"),
-          :amount => transaction["DebitCredit"] == 'C' ? transaction["Amount"] : ('-' + transaction["Amount"]),
+          :date_time => Time.parse("#{transaction['TransactionDate']} UTC"),
+          :amount => transaction["DebitCredit"] == 'C' ? transaction["Amount"] : "-#{transaction['Amount']}",
           :type_name => translate_transaction_type(transaction["TransactionType"]),
           :description => transaction["Narrative"],
           :reverse => transaction["ReversalFlag"] == 'Y',
           :meta_data => {
-            :updated_at => Time.parse(transaction["DateModified"] + " UTC")
+            :updated_at => Time.parse("#{transaction['DateModified']} UTC")
           }
         }
       end
