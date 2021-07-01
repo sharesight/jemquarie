@@ -18,10 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "savon",                   '~> 2.12'
-  spec.add_runtime_dependency "activesupport",   '>= 5.1'
+  spec.add_runtime_dependency "activesupport", '~> 6.0.0'
+  spec.add_runtime_dependency "savon", '~> 2.12'
 
-  spec.add_development_dependency "rake",        '~> 11.2'
-  spec.add_development_dependency "webmock",     '~> 3.3'
-  spec.add_development_dependency "rspec",       '~> 3.4'
+  spec.add_development_dependency "rake", '~> 11.2'
+  spec.add_development_dependency "rspec", '~> 3.4'
+  spec.add_development_dependency "webmock", '~> 3.3'
 end
