@@ -8,7 +8,8 @@ module Jemquarie
         return result if result[:error]
 
         details = []
-        unless result["XMLExtract"]["yourclientsAccountDetails"] && result["XMLExtract"]["yourclientsAccountDetails"]["yourclientsAccountDetail"]
+        unless result["XMLExtract"]["yourclientsAccountDetails"] &&
+               result["XMLExtract"]["yourclientsAccountDetails"]["yourclientsAccountDetail"]
           return details
         end
 
