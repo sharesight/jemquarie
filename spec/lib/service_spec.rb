@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Jemquarie::Service do
-
   before(:each) do
     Jemquarie::Jemquarie.api_credentials("testkey", "testapp")
   end
@@ -33,11 +32,11 @@ describe Jemquarie::Service do
         )
     end
     it "should raise nothing" do
-      expect{ importer.date }.to_not raise_error
+      expect { importer.date }.to_not raise_error
     end
     it "should return error message" do
       @result = importer.date
-      expect(@result).to eq({:error => "An error has occured, please try again later"})
+      expect(@result).to eq({ :error => "An error has occured, please try again later" })
     end
   end
 
@@ -50,12 +49,11 @@ describe Jemquarie::Service do
         )
     end
     it "should raise nothing" do
-      expect{ importer.date }.to_not raise_error
+      expect { importer.date }.to_not raise_error
     end
     it "should return error message" do
       @result = importer.date
-      expect(@result).to eq({:error => "An error has occured, please try again later"})
+      expect(@result).to eq({ :error => "An error has occured, please try again later" })
     end
   end
-
 end

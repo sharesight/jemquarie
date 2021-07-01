@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Jemquarie::Jemquarie do
-
   describe "set api_key" do
     before :each do
       Jemquarie::Jemquarie.api_credentials('TEST', 'APP')
@@ -11,5 +10,4 @@ describe Jemquarie::Jemquarie do
       expect(Jemquarie::Jemquarie.app_key).to eq('APP')
     end
   end
-
 end

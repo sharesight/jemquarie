@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Jemquarie::Expiry do
-
   before(:each) do
     Jemquarie::Jemquarie.api_credentials("testkey", "testapp")
   end
@@ -22,5 +21,4 @@ describe Jemquarie::Expiry do
       expect(@result).to eq(Time.parse("2015-01-14 10:22:12.03 UTC"))
     end
   end
-
 end

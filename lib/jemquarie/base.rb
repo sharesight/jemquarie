@@ -2,9 +2,7 @@ require 'openssl'
 require 'base64'
 
 module Jemquarie
-
   class Base
-
     include Parser::Generic
 
     def initialize(username, password)
@@ -12,7 +10,7 @@ module Jemquarie
       @password = password
       @client = ::Savon.client do
         endpoint    Jemquarie::BASE_URI
-        wsdl        File.expand_path("../extract.wsdl", __FILE__)
+        wsdl        File.expand_path('extract.wsdl', __dir__)
         log_level   Jemquarie.log_level
         log Jemquarie.log_requests
         logger Jemquarie.logger if Jemquarie.logger
@@ -25,7 +23,5 @@ module Jemquarie
     def hash_key(key)
       Base64.strict_encode64(OpenSSL::Digest::SHA1.digest(key))
     end
-
   end
-
 end

@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Jemquarie::Balance do
-
   before(:each) do
     Jemquarie::Jemquarie.api_credentials("testkey", "testapp")
   end
@@ -38,9 +37,8 @@ describe Jemquarie::Balance do
         @result = importer.balance
       end
       it "should work" do
-        expect(@result).to eq({:error => "Unable to process this request at this time", :code => "E0009"})
+        expect(@result).to eq({ :error => "Unable to process this request at this time", :code => "E0009" })
       end
     end
   end
-
 end

@@ -1,20 +1,20 @@
 module Jemquarie
-
   class AccountDetails < Base
-
     include Parser::AccountDetails
 
     def details(date_from = (Date.today - 1.day), date_to = Date.today, account_number = '', include_closed = 'Y')
-      response = @client.call(:generate_xml_extract, :message => create_message(date_from, date_to, account_number, include_closed))
+      response = @client.call(:generate_xml_extract,
+                              :message => create_message(date_from, date_to, account_number, include_closed))
       return parse_account_details(response) if response.success?
-      {:error => "An error has occured, please try again later"}
+
+      { :error => "An error has occured, please try again later" }
     end
 
-private
+    private
 
     def create_message(date_from, date_to, account_number, include_closed)
       {
-        :string  => hash_key(Jemquarie.api_key), # base64 encoded of the sha1 hashed api key
+        :string => hash_key(Jemquarie.api_key), # base64 encoded of the sha1 hashed api key
         :string0 => Jemquarie.app_key,
         :string1 => hash_key(@username),
         :string2 => hash_key(@password),
@@ -30,7 +30,5 @@ private
         ]
       }
     end
-
   end
-
 end

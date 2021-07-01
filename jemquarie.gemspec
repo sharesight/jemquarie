@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jemquarie/version'
 
@@ -8,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = Jemquarie::VERSION
   spec.authors       = ["Claudio Contin"]
   spec.email         = ["contin@gmail.com"]
-  spec.description   = %q{Connect to Macquarie ESI web services}
-  spec.summary       = %q{Ruby Gem for extracting cash transactions from Macquarie ESI web service}
+  spec.description   = 'Connect to Macquarie ESI web services'
+  spec.summary       = 'Ruby Gem for extracting cash transactions from Macquarie ESI web service'
   spec.homepage      = "https://github.com/clod81/jemquarie"
   spec.license       = "MIT"
 

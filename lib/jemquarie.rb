@@ -14,7 +14,6 @@ require 'jemquarie/balance'
 require 'jemquarie/service'
 
 module Jemquarie
-
   class Jemquarie
     BASE_URI        = "https://www.macquarie.com.au/ESI/ESIWebService/Extract"
     @api_key        = nil
@@ -42,18 +41,7 @@ module Jemquarie
         @app_key
       end
 
-      def logger
-        @logger
-      end
-
-      def log_requests
-        @log_requests
-      end
-
-      def log_level
-        @log_level
-      end
-    end # end << self
+      attr_reader :logger, :log_requests, :log_level
+    end
   end
-
 end

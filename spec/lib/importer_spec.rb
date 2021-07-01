@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Jemquarie::Importer do
-
   before(:each) do
     Jemquarie::Jemquarie.api_credentials("testkey", "testapp")
   end
@@ -42,8 +41,7 @@ describe Jemquarie::Importer do
       expect(first_item[:reverse]).to eq(false)
       expect(last_item[:meta_data][:updated_at]).to eq(Time.parse("2014-05-01 01:36:42.763 UTC"))
 
-
-      reverse_item = @result.detect{ |row| row[:reverse] == true }
+      reverse_item = @result.detect { |row| row[:reverse] == true }
       expect(reverse_item[:foreign_identifier]).to eq(first_item[:foreign_identifier])
       expect(reverse_item[:account_number]).to eq("121741987")
       expect(reverse_item[:date_time]).to eq(Time.parse("2008-12-23 00:00:00 UTC"))
@@ -53,7 +51,6 @@ describe Jemquarie::Importer do
       expect(reverse_item[:reverse]).to eq(true)
       expect(reverse_item[:meta_data][:updated_at]).to eq(Time.parse("2008-12-23 04:14:26.683 UTC"))
     end
-
   end
 
   describe "single transaction success" do
@@ -163,5 +160,4 @@ describe Jemquarie::Importer do
       expect(@result).not_to be_empty
     end
   end
-
 end

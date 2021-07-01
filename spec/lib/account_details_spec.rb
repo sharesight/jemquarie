@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Jemquarie::AccountDetails do
-
   before(:each) do
     Jemquarie::Jemquarie.api_credentials("testkey", "testapp")
   end
@@ -39,5 +38,4 @@ describe Jemquarie::AccountDetails do
       expect(first_res[:primary_adviser_name]).to eq("FORREST           PETER        MR")
     end
   end
-
 end
