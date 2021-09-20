@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'warning'
 
 Warning.process do |warning|
