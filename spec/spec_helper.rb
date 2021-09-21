@@ -20,4 +20,7 @@ RSpec.configure do |config|
   config.order = 'random'
 end
 
+# Requiring custom test helpers
+Dir["#{File.dirname(__FILE__)}/spec_helpers/*.rb"].sort.each { |f| require File.expand_path(f) }
+
 WebMock.disable_net_connect!(allow_localhost: true)
