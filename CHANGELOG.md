@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.4.3 (`15/03/2022`)
+ * Bump activerecord to "~> 6.1", ">= 6.1.4.7" to support Rails 6.1 upgrade [#12](https://github.com/sharesight/jemquarie/pull/12)
+ * Raise errors on deprecation warnings, added frozen string literal [#11](https://github.com/sharesight/jemquarie/pull/11)
+ * Remove support for Ruby 2.6 [#10](https://github.com/sharesight/jemquarie/pull/10)
+
 ## 1.4.2 `(06/07/2021)`
 * remove Travis CI [#9](https://github.com/sharesight/jemquarie/pull/9)
 * add rubocop [#8](https://github.com/sharesight/jemquarie/pull/8)
