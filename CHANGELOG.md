@@ -1,6 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+ * Add Slack notification to GA workflows [#15](https://github.com/sharesight/jemquarie/pull/15)
+ * Run tests and Rubocop with Github Actions [#14](https://github.com/sharesight/jemquarie/pull/14)
+
 ## 1.4.3 (`15/03/2022`)
+ * Address CircleCI Ruby image deprecation [#13](https://github.com/sharesight/jemquarie/pull/13)
  * Bump activerecord to "~> 6.1", ">= 6.1.4.7" to support Rails 6.1 upgrade [#12](https://github.com/sharesight/jemquarie/pull/12)
  * Raise errors on deprecation warnings, added frozen string literal [#11](https://github.com/sharesight/jemquarie/pull/11)
  * Remove support for Ruby 2.6 [#10](https://github.com/sharesight/jemquarie/pull/10)
