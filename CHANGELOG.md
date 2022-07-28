@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## Unreleased
+ * Delete CircleCI config [#16](https://github.com/sharesight/jemquarie/pull/16)
  * Add Slack notification to GA workflows [#15](https://github.com/sharesight/jemquarie/pull/15)
  * Run tests and Rubocop with Github Actions [#14](https://github.com/sharesight/jemquarie/pull/14)
 
