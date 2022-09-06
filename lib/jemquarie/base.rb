@@ -16,7 +16,7 @@ module Jemquarie
         log_level   Jemquarie.log_level
         log Jemquarie.log_requests
         logger Jemquarie.logger if Jemquarie.logger
-        ssl_version :TLSv1
+        ssl_version :TLSv1_2
       end
     end
 
