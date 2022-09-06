@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "activesupport", '~> 6.1', '>= 6.1.4.7'
   spec.add_runtime_dependency "savon", '~> 2.12'
+  spec.add_runtime_dependency "rack", '~> 2.2.0', '< 3.0.0'
 
   spec.add_development_dependency "rake", '~> 11.2'
   spec.add_development_dependency "rspec", '~> 3.4'
