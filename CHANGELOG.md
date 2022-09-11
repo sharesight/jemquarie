@@ -1,6 +1,11 @@
 # CHANGELOG
 
 ## Unreleased
+
+## 1.4.4 (`12/09/2022`)
+ * Don't use Rack v3.0.0 in Jemquarie [#19](https://github.com/sharesight/jemquarie/pull/19)
+ * Update TLS version to 1.2 [#18](https://github.com/sharesight/jemquarie/pull/18)
+ * Update Jemquarie homepage in gemspec [#17](https://github.com/sharesight/jemquarie/pull/17)
  * Delete CircleCI config [#16](https://github.com/sharesight/jemquarie/pull/16)
  * Add Slack notification to GA workflows [#15](https://github.com/sharesight/jemquarie/pull/15)
  * Run tests and Rubocop with Github Actions [#14](https://github.com/sharesight/jemquarie/pull/14)
