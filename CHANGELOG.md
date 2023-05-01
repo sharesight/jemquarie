@@ -1,7 +1,10 @@
 # CHANGELOG
 
+## 1.6.0 (`01/05/2023`)
+ * Add support for Ruby 3.1 [#22](https://github.com/sharesight/jemquarie/pull/22)
+
 ## 1.5.0 (`24/03/2023`)
-* Add support for Ruby 3.0 [#21](https://github.com/sharesight/jemquarie/pull/21)
+ * Add support for Ruby 3.0 [#21](https://github.com/sharesight/jemquarie/pull/21)
 
 ## 1.4.4 (`12/09/2022`)
  * Don't use Rack v3.0.0 in Jemquarie [#19](https://github.com/sharesight/jemquarie/pull/19)
