@@ -82,3 +82,7 @@ It returns an Hash {:error => "Invalid credentials"} .
 ## Contributing
 
 See [CONTRIBUTING](./CONTRIBUTING.md).
+
+## Code of Conduct
+
+See [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md).
