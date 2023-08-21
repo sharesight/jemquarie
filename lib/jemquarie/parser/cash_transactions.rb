@@ -28,11 +28,14 @@ module Jemquarie
       private
 
       def parse_single_transaction(transaction)
+        amount = transaction["Amount"].to_f.abs
+        amount *= -1 if transaction["DebitCredit"] == 'D'
+
         {
           :foreign_identifier => transaction["TransactionId"],
           :account_number => transaction["AccountNumber"],
           :date_time => Time.parse("#{transaction['TransactionDate']} UTC"),
-          :amount => transaction["DebitCredit"] == 'C' ? transaction["Amount"] : "-#{transaction['Amount']}",
+          :amount => amount.to_s,
           :type_name => translate_transaction_type(transaction["TransactionType"]),
           :description => transaction["Narrative"],
           :reverse => transaction["ReversalFlag"] == 'Y',
