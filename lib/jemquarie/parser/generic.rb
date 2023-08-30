@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'active_support'
+
 module Jemquarie
   module Parser
     module Generic
