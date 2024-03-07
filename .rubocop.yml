@@ -11,6 +11,9 @@ Gemspec/RequireMFA:
 Gemspec/RequiredRubyVersion:
   Enabled: false
 
+Layout/ExtraSpacing:
+  Enabled: false
+
 Layout/LineLength:
   Max: 130
 
