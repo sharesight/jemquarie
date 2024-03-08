@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "rack", '~> 2.2'
   spec.add_runtime_dependency "savon", '~> 2.12'
 
-  spec.add_development_dependency "rake", '~> 11.2'
+  spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", '~> 3.4'
   spec.add_development_dependency "rubocop", '1.59.0'
   spec.add_development_dependency "warning"
