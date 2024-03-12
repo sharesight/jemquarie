@@ -1,6 +1,11 @@
 # CHANGELOG
+
+## 1.7.0 (`13/03/2024`)
+ * Add support for Ruby 3.3 [#26](https://github.com/sharesight/jemquarie/pull/26)
+
 ## 1.6.1 (`22/08/2023`)
  * Fix double negative for cash transaction amounts [#24](https://github.com/sharesight/jemquarie/pull/24)
+
 ## 1.6.0 (`01/05/2023`)
  * Add support for Ruby 3.1 [#22](https://github.com/sharesight/jemquarie/pull/22)
 
