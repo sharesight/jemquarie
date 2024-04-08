@@ -1,8 +1,17 @@
 AllCops:
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.3
   NewCops: enable
 
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: gemspec
+
+Gemspec/RequireMFA:
+  Enabled: false
+
 Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Layout/ExtraSpacing:
   Enabled: false
 
 Layout/LineLength:
