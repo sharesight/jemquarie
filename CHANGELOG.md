@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2.0.0 (`28/05/2024`)
+ * Switch to Rails 7 [#25](https://github.com/sharesight/jemquarie/pull/25)
+
 ## 1.7.0 (`13/03/2024`)
  * Add support for Ruby 3.3 [#26](https://github.com/sharesight/jemquarie/pull/26)
 
