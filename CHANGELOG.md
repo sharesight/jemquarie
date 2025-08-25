@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2.2.0 (`25/08/2025`)
+ * Update dependencies for Rails [#29](https://github.com/sharesight/jemquarie/pull/29)
+
 ## 2.1.0 (`28/04/2025`)
  * Support both Rails 7.0 and 7.1 [#28](https://github.com/sharesight/jemquarie/pull/28)
 
