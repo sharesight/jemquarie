@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.3.0 (`27/03/2026`)
+ * Bump active support to v8.0 for jemquarie [#30](https://github.com/sharesight/jemquarie/pull/30)
+ * Don't run ruby 3.1 tests for jemquarie [#31](https://github.com/sharesight/jemquarie/pull/31)
+ * Bump ruby version for jemquarie to 3.3.1[#32](https://github.com/sharesight/jemquarie/pull/32)
+
 ## 2.2.0 (`25/08/2025`)
  * Update dependencies for Rails [#29](https://github.com/sharesight/jemquarie/pull/29)
 
